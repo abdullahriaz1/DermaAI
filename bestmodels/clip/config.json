@@ -1,0 +1,39 @@
+{
+  "_name_or_path": "openai/clip-vit-base-patch32",
+  "architectures": [
+    "CLIPForImageClassification"
+  ],
+  "id2label": {
+    "0": "blackheads",
+    "1": "dark_spot",
+    "2": "nodules",
+    "3": "papules",
+    "4": "pustules",
+    "5": "whiteheads"
+  },
+  "initializer_factor": 1.0,
+  "label2id": {
+    "blackheads": "0",
+    "dark_spot": "1",
+    "nodules": "2",
+    "papules": "3",
+    "pustules": "4",
+    "whiteheads": "5"
+  },
+  "logit_scale_init_value": 2.6592,
+  "model_type": "clip",
+  "problem_type": "multi_label_classification",
+  "projection_dim": 512,
+  "text_config": {
+    "bos_token_id": 0,
+    "dropout": 0.0,
+    "eos_token_id": 2,
+    "model_type": "clip_text_model"
+  },
+  "torch_dtype": "float32",
+  "transformers_version": "4.42.0.dev0",
+  "vision_config": {
+    "dropout": 0.0,
+    "model_type": "clip_vision_model"
+  }
+}
