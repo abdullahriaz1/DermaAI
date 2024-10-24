@@ -162,7 +162,7 @@ def display_model_info(model_name):
         st.markdown(f"**Parameters**: {info['parameters']}")
         st.markdown(f"**Description**: {info['description']}")
         st.markdown(f"**Why This Accuracy?**: {info['accuracy_explanation']}")
-        st.caption("**Accuracy Explanation**: The accuracy indicates how often the model correctly classifies skin conditions based on its training data. While high accuracy suggests reliability, no model is perfect, and professional consultation is advised for severe cases.")
+        st.caption("**Accuracy Explanation**: The accuracy indicates how often the model correctly classifies skin conditions based on its training data. While high accuracy suggests reliability, no model is perfect, and professional consultation is advised.")
 
 def process_and_display_image(selected_model):
     uploaded_file = st.file_uploader(label='Pick an image to test', type=['png', 'jpg', 'jpeg'])
@@ -239,12 +239,22 @@ def show_intro():
 def show_footer():
     st.markdown("""
         ---
-        **Watch Our Demo Video**: [Demo Video](https://drive.google.com/file/d/1RdZXmp-HX30BvULKaN3BC7ymNggpLjWt/view?usp=sharing)  
-        © 2024 DermaAI Inc. All Rights Reserved.
+        **Watch Our [Demo Video](https://drive.google.com/file/d/1RdZXmp-HX30BvULKaN3BC7ymNggpLjWt/view?usp=sharing)** 
+        
+        **[GitHub Repository](https://github.com/abdullahriaz1/DermaAI)**
+        
+        2024 DermaAI
     """, unsafe_allow_html=True)
 
 def main():
     st.set_page_config(layout="wide", page_title="DermaAI")
+    hide_decoration_bar_style = '''
+            <style>
+                [data-testid="stDecoration"] {background: #669FB7;}
+            </style>
+        '''
+    st.markdown(hide_decoration_bar_style, unsafe_allow_html=True)
+
     show_intro()
     show_footer()
 
