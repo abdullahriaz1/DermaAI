@@ -181,7 +181,6 @@ def process_and_display_image(selected_model):
 
         st.header(f"{MODEL_INFO[selected_model]['company']} {selected_model.upper()}")
         display_model_info(selected_model)
-        st.markdown("---")
 
 def show_diagnosis(model_name, predictions):
     st.header('Diagnosis')
