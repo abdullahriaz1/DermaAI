@@ -1,7 +1,7 @@
 # Derma AI
 
 Your Personalized Skin Advisor
-A suite of AI-based skin ailment classifiers leveraging Vision Transformers
+A suite of AI-based skin ailment classifiers leveraging deep learning with new techniques, including Vision Transformers
 
 ## Components
 
